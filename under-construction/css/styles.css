@@ -1,0 +1,175 @@
+/* 01. Global Reset */
+/*-------------------*/
+body, html  { height: 100%}
+html, body, div, span, applet, object, iframe,
+blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	}
+body { line-height: 1}
+ol, ul { list-style: none}
+blockquote, q { quotes: none}
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none}
+:focus { outline: 0}
+del { text-decoration: line-through}
+
+/* 02. General Styles */
+/*---------------------*/
+body {
+	font-family: 'Open Sans', helvetica, arial, sans-serif;
+	font-weight: normal;
+	background: #06317E;
+	color: #FFF;
+	margin: 0;
+}
+h1 {
+text-transform: uppercase;
+font-weight: 700;
+font-size: 31px;
+text-align: center;
+margin: 10px 0;
+color: rgba(255, 255, 255, 0.75);
+}
+p {
+	text-align: center;
+	font-size: 14px;
+	font-weight:300
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+textarea, input {
+	outline: none;
+}
+
+.clear{
+	clear:both;
+}
+.container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.wrapper {
+	position: absolute;
+	height: 560px;
+	width: 650px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 30%;
+}
+.hide {
+	opacity: 0;
+}
+.noise {
+	background-image: url("../images/noise.png");
+	opacity: 0.050;
+}
+.overlay {
+	  position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+/* 03. Header Styles */
+/*---------------------*/
+.header {
+	display: block;
+	overflow: hidden;
+	padding: 0 0 20px;
+}
+.logo {
+width: 300px;
+margin: 0 auto;
+}
+.desc {
+padding: 20px 20px 0 20px;
+margin: 0 auto;
+}
+
+/* 04. Timer Styles */
+/*-------------------*/
+#timer {
+margin: 35px auto 55px auto;
+display: block;
+position: relative;
+padding: 0 20px;
+float: left;
+}
+.timer_box {
+float: left;
+width: 124px;
+height: 64px;
+box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+background-color: rgba(255, 255, 255, 0.2);
+transition: all 0.3s;
+border-radius: 50%;
+margin: 0 14px;
+padding: 30px 0;
+}
+.timer_box:hover {
+	background-color: rgba(255, 255, 255, 0.35);
+}
+.timer_box strong{
+	font-size: 56px;
+	font-family: 'Roboto', helvetica, arial, sans-serif;
+	font-weight: 300;
+}
+.timer_box p {
+font-family: 'Roboto', helvetica, arial, sans-serif;
+font-weight: 300;
+margin: 0;
+text-transform: uppercase;
+font-size: 10px;
+color: rgba(255, 255, 255, 0.75);
+line-height: 10px;
+}
+#days, #hours, #minutes, #seconds {
+	text-align: center;
+}
+#message p {
+	margin: 0 0 20px 0;
+	text-align: center;
+	font-size: 14px;
+	font-weight:300
+}
+
+/* 05. Responsive Styles */
+/*-----------------------*/
+@media (max-width: 767px) {
+.wrapper {width: 460px;}
+.header {padding: 0;}
+.logo {float: none; margin: 0 auto;}
+.desc {float: none; border-left: none; width: 425px; margin: 20px auto 0 auto; padding:0;}
+h1 {font-size: 29px; text-align: center;}
+.timer_box {box-shadow: none; background: none !important; width:85px; }
+#timer {padding: 0; margin: 25px auto;}
+.timer_box p {color: #fff;}
+#message p {margin: 0 0 20px 0;}
+}
+
+@media (max-width: 340px) {
+.wrapper {width: 300px; top:7%;}
+.header {padding: 0;}
+.logo {float: none; margin: 0 auto;}
+.desc {float: none; border-left: none; width: 300px; margin: 20px auto 0 auto; padding:0;}
+h1 {font-size: 29px; text-align: center; margin: 10px 0 0 0;}
+.sky-tabs {display: none;}
+.timer_box {box-shadow: none; background: none !important; width:120px; }
+.timer_box p {color: #fff;}
+#message p {margin: 0;}
+}

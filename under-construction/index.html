@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Jaywick — Under Construction</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+        <div class="loader">
+          <img src="images/loader.gif" alt="loader">
+        </div>
+	<div id="container" class="container">
+		<div id="output" class="container"></div>
+		<div id="vignette" class="overlay vignette"></div>
+		<div id="noise" class="overlay noise"></div>
+		<div id="ui" class="wrapper">
+			<div class="header animated fadeInLeft">
+				<div class="logo">
+					<img class="logo" src="images/logo.png" alt="logo"/>
+				</div>
+				<div class="desc">
+					<h1>Relax, The New Site Is Almost Done.</h1>
+				</div>
+			</div><!-- End Header -->
+			<div class="clear"></div>
+			<div id="timer" class="center animated fadeInDown">
+				<div id="message"></div>		
+				<div  class="timer_box"><div id="days"></div></div>
+				<div  class="timer_box">  <div id="hours"></div></div>
+				<div  class="timer_box">  <div id="minutes"></div></div>
+				<div  class="timer_box">   <div id="seconds"></div></div>
+			</div><!-- End Timer -->
+		</div><!-- End Ui Wrapper -->
+	</div><!-- End Container -->
+
+	<script type="text/javascript">
+	//<![CDATA[	
+		var ambient_value = '#052661';
+		var diffuse_value = '#56a074';
+		var launch = new Date(2014, 9, 1, 12, 00);
+	//]]>
+	</script>        
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type='text/javascript' src="js/fss.js"></script> 
+	<script type='text/javascript' src="js/custom.js"></script>
+	<script type='text/javascript' src='js/timer.js'></script>
+</body>
+</html>
